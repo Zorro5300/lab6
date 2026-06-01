@@ -1,6 +1,6 @@
 # Лабораторная работа 6: Создание внутренней формы представления программы
 
-**Вариант:** 5 (арифметические выражения)
+**Вариант:** 8 (арифметические выражения)
 
 **Цель работы**
 Изучить методы построения внутреннего представления программы (ВПП) на основе контекстно-свободной грамматики, реализовать синтаксический анализатор методом рекурсивного спуска и преобразовать арифметические выражения в тетрады и ПОЛИЗ.
@@ -58,24 +58,20 @@ num → digit {digit}
 **Скриншоты работы лексера и парсера**
 
 *Пример 1: Корректное выражение `2 + 3 * 4`*
-
-<img width="610" height="526" alt="image" src="https://github.com/user-attachments/assets/14546f09-3ed4-418d-905b-7adac4e8bffc&quot; />
+<img width="599" height="743" alt="{77D0E5C8-EE70-4B72-AB71-F8AD2A85EA77}" src="https://github.com/user-attachments/assets/9ad6cf45-a1b1-46f1-bb6d-65e3562fd474" />
 
 *Пример 2: Выражение с ошибкой `2 + * 3`*
-
- <img width="564" height="553" alt="image" src="https://github.com/user-attachments/assets/0f7ddedd-573f-4823-b74a-dc905a783fad&quot; />
-
+<img width="693" height="704" alt="{28B26AB0-FB65-446C-8494-C8D02F40B878}" src="https://github.com/user-attachments/assets/1cf7d1b0-c682-4c5e-a627-228d29e22238" />
+ 
 *Пример 3: Выражение с идентификатором `a + b`*
-
-<img width="559" height="644" alt="image" src="https://github.com/user-attachments/assets/711f750a-4312-417f-a863-7449fc000cc4&quot; />
+<img width="568" height="707" alt="{CF36418E-EA8D-4119-9877-115D19C33FED}" src="https://github.com/user-attachments/assets/287d5d4c-ffec-4c19-8164-3c601594411e" />
 
 **Внутренняя форма представления программы (тетрады)**
 
-<img width="1270" height="561" alt="image" src="https://github.com/user-attachments/assets/2bfaf4cc-a80d-4591-91d6-4fb0c9964aca&quot; />
 
 **Скриншот с таблицей тетрад для выражения `(2 + 3) * 4`**
+<img width="455" height="466" alt="{E03D99D6-25E3-4563-9573-C53F855AC13D}" src="https://github.com/user-attachments/assets/6ebe8d85-5e9a-4913-9116-3cdb3f19544f" />
 
-<img width="1211" height="608" alt="image" src="https://github.com/user-attachments/assets/3a0bc5e5-e5f9-47ee-8b3c-c57873241f3b&quot; />
 
 **ПОЛИЗ (польская инверсная запись)**
 ПОЛИЗ формируется с использованием стека операций (алгоритм Дейкстры). Для выражений, состоящих исключительно из целых чисел, также вычисляется значение.
