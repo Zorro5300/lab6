@@ -13,9 +13,9 @@
 E → TA
 A → ε | + TA | - TA
 T → FB
-B → ε | * FB | / FB | % FB
+B → ε | * FB | / FB
 F → num | id | (E)
-id → letter {letter | digit | _}
+id → letter {letter | digit}
 num → digit {digit}
 ```
 
@@ -42,7 +42,7 @@ num → digit {digit}
 - **ERROR** – недопустимый символ
 
 **схема Лексического анализатора**
-<img width="1426" height="963" alt="image" src="https://github.com/user-attachments/assets/4618788a-a2c7-4ce9-ae33-c41354751cb7&quot; />
+<img width="1233" height="1683" alt="graphviz" src="https://github.com/user-attachments/assets/be62cfd3-e613-4d0a-a122-176697f09cb6" />
 
 Схема работы лексера:
 1. Пропуск пробельных символов.
@@ -52,7 +52,8 @@ num → digit {digit}
 5. При обнаружении недопустимого символа – генерация ошибки.
 
 **Схема рекурсивного спуска для парсера**
-<img width="764" height="970" alt="image" src="https://github.com/user-attachments/assets/762635bc-2c0f-4a19-904f-7990dec716ed&quot; />
+<img width="608" height="2195" alt="graphviz1" src="https://github.com/user-attachments/assets/2e042813-117b-413f-839b-1e6af195da18" />
+
 
 **Скриншоты работы лексера и парсера**
 
